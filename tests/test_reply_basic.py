@@ -57,7 +57,7 @@ class TestReplyBasic:
 		assert(len(calls) == 1)
 
 	def test_zaebal_between(self):
-		assert(self.module.reply(FakeEvent('бот уже заебал')) == True)
+		assert(self.module.reply(FakeEvent('бот уже заебал!')) == True)
 		calls = self.fake_send_message.call_args_list
 		assert(len(calls) == 1)
 
@@ -75,3 +75,8 @@ class TestReplyBasic:
 		calls = self.fake_send_message.call_args_list
 		assert(len(calls) == 1)
 		assert(calls[0][0][1] == 'F')
+
+	def test_who(self):
+		assert(self.module.reply(FakeEvent('кто лиля?')) == True)
+		calls = self.fake_send_message.call_args_list
+		assert(len(calls) == 1)
