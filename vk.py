@@ -4,7 +4,8 @@ import random
 from typing import List
 from vk_api import vk_api, VkUpload
 
-token = '54db9714241ed308a860a986a7bbeff27e4218c09eca1fd2402e75aba2e352cb2539f643fd3003404e68c'
+with open('./data/vk_api.token') as f:
+	token = f.read().strip()
 vk_session = vk_api.VkApi(token=token)
 vk = vk_session.get_api()
 upload = VkUpload(vk_session)
