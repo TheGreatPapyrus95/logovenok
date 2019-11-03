@@ -5,7 +5,6 @@ import constants
 import vk
 from modules.reply_basic import ReplyBasic
 from modules.reply_joseph import ReplyJoseph
-from modules.reply_joseph_correction import ReplyJosephCorrection
 from modules.reply_btard import ReplyBtard
 from modules.ping_veron_service import VeronPinger
 from modules.anime_hating_service import AnimeHatingService
@@ -33,7 +32,6 @@ def main():
 reply_modules = [
 	ReplyBasic(),
 	ReplyJoseph(),
-	ReplyJosephCorrection(),
 	ReplyBtard(),
 ]
 
