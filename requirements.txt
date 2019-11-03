@@ -1,0 +1,5 @@
+vk_api==11.5.1
+apiai==1.2.3
+requests==2.22.0
+beautifulsoup4==4.8.1
+mechanize==0.4.3

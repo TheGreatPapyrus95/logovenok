@@ -1,0 +1,43 @@
+[
+  {
+    "query": ["х)"],
+    "type": "str",
+    "answers": ["х)"]
+  },
+  {
+    "query": ["x)"],
+    "type": "str",
+    "answers": ["х)"]
+  },
+
+  {
+    "query": ["лол"],
+    "type": "str",
+    "answers": ["Кек"]
+  },
+  {
+    "query": ["ржу"],
+    "type": "str",
+    "answers": ["Ржомба"]
+  },
+  {
+    "query": ["ахах"],
+    "type": "str",
+    "answers": ["Аахпахпха"]
+  },
+  {
+    "query": ["ору"],
+    "type": "str",
+    "answers": ["Лол"]
+  },
+  {
+    "query": ["f"],
+    "type": "str",
+    "answers": ["F"]
+  },
+  {
+    "query": ["+"],
+    "type": "str",
+    "answers": ["+"]
+  }
+]
