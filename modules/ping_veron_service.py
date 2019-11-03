@@ -28,7 +28,7 @@ class VeronPinger(threading.Thread):
 			for chat_id, peer_id in vk.get_chats():
 				try:
 					file = random.choice(self._attachments)
-					vk.send_message(chat_id, '@kiririn_akin, когда сходка?', [file], peer_id)
+					vk.send_message(chat_id, '@kiririn_akin, @matezius_tem, когда сходка?', [file], peer_id)
 					time.sleep(1)
 				except:
 					print(traceback.format_exc())
