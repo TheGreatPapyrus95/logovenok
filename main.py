@@ -15,8 +15,8 @@ def main():
 	AnimeHatingService().start()
 
 	while True:
-		longpoll = VkBotLongPoll(vk.vk_session, constants.group_id)
 		try:
+			longpoll = VkBotLongPoll(vk.vk_session, constants.group_id)
 			print('listen for events ...')
 			for event in longpoll.listen():
 				handle_event(event)
