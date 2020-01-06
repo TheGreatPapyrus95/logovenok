@@ -8,13 +8,13 @@ from modules.reply_joseph import ReplyJoseph
 from modules.reply_btard import ReplyBtard
 from modules.ping_veron_service import VeronPinger
 from modules.anime_hating_service import AnimeHatingService
-from modules.event_service import EventService
+from modules.schedule_service import ScheduleService
 
 def main():
 	vk.load_chats_list()
 	VeronPinger().start()
 	AnimeHatingService().start()
-	EventService().start()
+	ScheduleService().start()
 
 	while True:
 		try:

@@ -34,7 +34,7 @@ class ScheduleService(threading.Thread):
 							print(traceback.format_exc())
 
 	def _load_schedule(self):
-		with open('./data/events.json', encoding='utf-8') as f:
+		with open('./data/schedule.json', encoding='utf-8') as f:
 			return [
 				Event(x) for x in json.loads(f.read())
 			]
