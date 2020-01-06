@@ -52,7 +52,7 @@ class ReplyBasic(ReplyModule):
 	def _match(self, answer, message):
 		if answer.type == 'str' and message in answer.query:
 			return True
-		if answer.type == 'regex' and [True for regex in answer.query if re.fullmatch(regex, message)]:
+		if answer.type == 'regex' and [True for regex in answer.query if re.fullmatch(regex, message, re.DOTALL)]:
 			return True
 		return False
 

@@ -15,22 +15,22 @@
     "answers": ["Пизда!"]
   },
   {
-    "query": [".* да$", ".* да\\?$"],
+    "query": [".*\\sда$", ".*\\sда\\?$"],
     "type": "regex",
     "answers": ["Пизда"]
   },
   {
-    "query": [".* да\\.$"],
+    "query": [".*\\sда\\.$"],
     "type": "regex",
     "answers": ["Пизда."]
   },
   {
-    "query": [".* да\\!$"],
+    "query": [".*\\sда\\!$"],
     "type": "regex",
     "answers": ["Пизда!"]
   },
   {
-    "query": [".* da$"],
+    "query": [".*\\sda$"],
     "type": "regex",
     "answers": ["Pizda"]
   },

@@ -80,3 +80,8 @@ class TestReplyBasic:
 		assert(self.module.reply(FakeEvent('кто лиля?')) == True)
 		calls = self.fake_send_message.call_args_list
 		assert(len(calls) == 1)
+
+	def test_multiline(self):
+		assert(self.module.reply(FakeEvent('ывы\nваыв\nда')) == True)
+		calls = self.fake_send_message.call_args_list
+		assert(len(calls) == 1)
