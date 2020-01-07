@@ -7,8 +7,8 @@ from modules.reply_module import ReplyModule
 
 
 class ReplyJoseph(ReplyModule):
-	min_interval = 3600
-	session_length = 180
+	min_interval = 60 * 60
+	session_length = 60 * 10
 
 	def __init__(self):
 		self._quotes = self._load_quotes()
