@@ -129,11 +129,6 @@
     "type": "regex",
     "answers": ["https://discordapp.com/invite/JJetpHA , лови :)"]
   },
-  {
-    "query": [".*:).*"],
-    "type": "regex",
-    "answers": [":)", ":-)", ")"]
-  },
 
   {
     "query": [".*моск((в([ауые]|ич))|оу).*"],
