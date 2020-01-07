@@ -49,7 +49,7 @@ class TestReplyBasic:
 		assert(self.module.reply(FakeEvent('ахах')) == False)
 		calls = self.fake_send_message.call_args_list
 		assert(len(calls) == 1)
-		assert(calls[0][0][1] == 'Аахпахпха')
+		assert(calls[0][0][1] in ['Аахпахпха', 'Лол'])
 
 	def test_zaebal(self):
 		assert(self.module.reply(FakeEvent('этот бот заебал уже')) == True)
