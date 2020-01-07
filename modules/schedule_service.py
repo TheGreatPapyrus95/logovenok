@@ -18,14 +18,14 @@ class ScheduleService(threading.Thread):
 	def run(self):
 		print('start schedule service')
 		while True:
-			time.sleep(10)
+			time.sleep(30)
 			if self.stop:
 				break
 
 			for event in self._schedule:
 				trigger_time = time.mktime(datetime.datetime(*event.time).timetuple()) - time.timezone
 				delta = abs(time.time() - trigger_time)
-				if delta < 5:
+				if delta <= 15:
 					for chat_id, peer_id in vk.get_chats():
 						try:
 							file = random.choice(event.attachment)
