@@ -9,12 +9,14 @@ from modules.reply_btard import ReplyBtard
 from modules.ping_veron_service import VeronPinger
 from modules.anime_hating_service import AnimeHatingService
 from modules.schedule_service import ScheduleService
+from modules.joker_service import JokerService
 
 def main():
 	vk.load_chats_list()
 	VeronPinger().start()
 	AnimeHatingService().start()
 	ScheduleService().start()
+	JokerService().start()
 
 	while True:
 		try:
