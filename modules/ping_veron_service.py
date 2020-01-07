@@ -9,8 +9,8 @@ import vk
 class VeronPinger(threading.Thread):
 	daemon = True
 
-	min_sleep = 86400
-	max_sleep = 604800
+	min_sleep = 60 * 60 * 24
+	max_sleep = 60 * 60 * 24 * 7
 
 	def __init__(self):
 		super().__init__()

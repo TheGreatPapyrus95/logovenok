@@ -9,8 +9,8 @@ import vk
 class AnimeHatingService(threading.Thread):
 	daemon = True
 
-	min_sleep = 259200
-	max_sleep = 1814400
+	min_sleep = 60 * 60 * 24 * 3
+	max_sleep = 60 * 60 * 24 * 21
 
 	def __init__(self):
 		super().__init__()

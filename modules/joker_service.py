@@ -27,8 +27,8 @@ class JokerService(threading.Thread):
 			for chat_id, peer_id in vk.get_chats():
 				try:
 					message = self._get_joke()
-					print('joker', chat_id, peer_id, message)
 					message += '\n\nФьюить ха!'
+					print('joker', chat_id, peer_id, message)
 					vk.send_message(chat_id, message, [], peer_id)
 				except:
 					print(traceback.format_exc())
